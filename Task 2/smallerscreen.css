@@ -65,6 +65,13 @@
     text-align: center;
 }
 
+#map {
+    height: 40vh;
+    margin: 1em;
+    min-width: 10vh;
+}
+
+
 a {
     color: inherit;
     text-decoration: inherit; 
