@@ -1,0 +1,143 @@
+.container {
+    background-color: rgb(226, 226, 226);
+    height: 100%;
+}
+
+.header {
+    background-color: #3c4a60;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: solid;
+    border-color: #a0aec4;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-dots {
+    display: none;
+}
+
+.header-logo {
+    color: white;
+    padding-left: 1em;
+    margin: 0;
+}
+
+.header-logo:hover, .header-item:hover {
+    color: #a0aec4;
+}
+
+.header-items {
+    display: flex;
+}
+
+.header-item {
+    padding-right: 1.5em;
+    color:white;
+}
+
+.banner {
+    background-color: dimgrey;
+}
+
+.banner img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    max-width: 100%;
+}
+
+.content {
+    margin-left: 30vw;
+    margin-right: 30vw;
+    background-color: white;
+    height:100%;
+}
+
+.title {
+    text-align: center;
+}
+
+.form {
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: grey;
+}
+
+.input {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.input-no-hover {
+    text-align:center;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.input:hover {
+    background-color: rgb(180, 180, 180);
+}
+
+.input-label {
+    color: white;
+    font-size: large;
+    padding-right: 1em;
+}
+
+.input input:focus {
+    background-color: antiquewhite;
+}
+
+#map {
+    height: 40vh;
+    margin: 1em;
+    min-width: 10vh;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit; 
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button {
+    background-color: #e98b10;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width: 120px;
+    height: 40px;
+}
+
+button:hover {
+    background-color: #eec48e;
+}
+
+hr {
+    margin: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    border: 1px solid rgb(226, 226, 226);
+}
+
