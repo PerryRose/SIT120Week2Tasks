@@ -1,6 +1,6 @@
 .container {
     background-color: rgb(226, 226, 226);
-    height: 100%;
+    padding-bottom: 1em;
 }
 
 .header {
@@ -37,10 +37,6 @@
     color:white;
 }
 
-.header-dots {
-    display: none;
-}
-
 .banner {
     background-color: dimgrey;
 }
@@ -56,6 +52,7 @@
 .content {
     margin-left: 20vw;
     margin-right: 20vw;
+    padding-bottom: 1em;
     background-color: white;
     height:100%;
 }
@@ -64,11 +61,95 @@
     text-align: center;
 }
 
+.sub-title {
+    text-align: center;
+}
+
+.dropdown {
+    display: none;
+}
+
+.form {
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: grey;
+}
+
+.input {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.input-no-hover {
+    text-align:center;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.input:hover {
+    background-color: rgb(180, 180, 180);
+}
+
+.input-label {
+    color: white;
+    font-size: medium;
+    padding-right: 1em;
+}
+
+.input input:focus {
+    background-color: antiquewhite;
+}
+
+.symptom {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.symptom:hover {
+    background-color: rgb(209, 208, 208);
+}
+
+.symptom-label {
+    text-align: left;
+}
+
+.exposure-title {
+    font-size: larger;
+    margin-left: 1em;
+}
+
+.exposure-content {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
 #map {
     height: 40vh;
     margin: 1em;
     min-width: 10vh;
 }
+
+#submit-button {
+    background-color: #e98b10;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width: 120px;
+    height: 40px;
+}
+
+#submit-button:hover {
+    background-color: #eec48e;
+}
+
 
 a {
     color: inherit;

@@ -1,6 +1,6 @@
 .container {
     background-color: rgb(226, 226, 226);
-    height: 100%;
+    padding-bottom: 1em;
 }
 
 .header {
@@ -16,10 +16,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-}
-
-.header-dots {
-    display: none;
 }
 
 .header-logo {
@@ -56,11 +52,15 @@
 .content {
     margin-left: 30vw;
     margin-right: 30vw;
+    padding-bottom: 1em;
     background-color: white;
-    height:100%;
 }
 
 .title {
+    text-align: center;
+}
+
+.sub-title {
     text-align: center;
 }
 
@@ -72,7 +72,7 @@
 
 .input {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 2fr;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 1em;
@@ -93,12 +93,41 @@
 
 .input-label {
     color: white;
-    font-size: large;
+    font-size: medium;
     padding-right: 1em;
 }
 
 .input input:focus {
     background-color: antiquewhite;
+}
+
+.symptom {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.symptom:hover {
+    background-color: rgb(209, 208, 208);
+}
+
+.symptom-label {
+    text-align: left;
+}
+
+.dropdown {
+    display: none;
+}
+
+.exposure-title {
+    font-size: larger;
+    margin-left: 1em;
+}
+
+.exposure-content {
+    margin-left: 1em;
+    margin-bottom: 1em;
 }
 
 #map {
