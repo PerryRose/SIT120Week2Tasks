@@ -8,12 +8,19 @@ class HotSpot {
     }
 }
 
-
-
 const hotSpots = [
-    new HotSpot("Flinders Street Station", "10:30AM - 10:45AM", "9 Jul 21", -37.81785576232708, 144.9673085501717),
-    new HotSpot("Kmart Burwood", "1:30PM - 2PM", "20 Jul 21", -37.85374403319895, 145.15016575304665),
-    new HotSpot("Coles Berwick", "4:45PM - 5:15PM", "23 Jul 21", -38.032070061000695, 145.34560744284525)
+    new HotSpot("Flinders Street Station", 
+                "10:30AM - 10:45AM", 
+                "9 Jul 21", 
+                -37.81785576232708, 144.9673085501717),
+    new HotSpot("Kmart Burwood", 
+                "1:30PM - 2PM", 
+                "20 Jul 21", 
+                -37.85374403319895, 145.15016575304665),
+    new HotSpot("Coles Berwick", 
+                "4:45PM - 5:15PM", 
+                "23 Jul 21", 
+                -38.032070061000695, 145.34560744284525)
 ];
 
 function initMap() {
@@ -27,10 +34,9 @@ function initMap() {
 
     let table = document.createElement("table");
     let tr = table.insertRow(-1);
-    let th = document.createElement("th");
-    
+
     hotSpots.forEach(x => {
-        const marker = new google.maps.Marker({
+        const _ = new google.maps.Marker({
             position: {lat: x.lat, lng: x.lng},
             map: map
         });
